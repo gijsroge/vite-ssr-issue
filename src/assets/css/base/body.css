@@ -1,0 +1,36 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  max-width: 100%;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  text-size-adjust: none;
+  touch-action: pan-y;
+  padding-bottom: calc(var(--mobile-bar-height));
+
+  @media (min-width: theme('screens.md')) {
+    padding-bottom: 0;
+  }
+
+  @screen md {
+    touch-action: initial;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  text-size-adjust: 100%;
+}
+
+@layer base {
+  p {
+    @apply rfs:text-sm;
+  }
+
+  @media (min-width: theme('screens.sm')) {
+    p {
+      @apply rfs:text-base;
+    }
+  }
+}

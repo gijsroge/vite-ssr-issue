@@ -1,0 +1,6 @@
+@import 'base/all.css';
+@import "prose.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
