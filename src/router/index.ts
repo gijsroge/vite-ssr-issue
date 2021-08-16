@@ -1,6 +1,5 @@
 import Homepage from '@/views/Homepage.vue'
 import { RouteRecordRaw } from 'vue-router'
-import scrollBehavior from './scrollBehavior'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -11,7 +10,6 @@ const routes: Array<RouteRecordRaw> = [
 ] as RouteRecordRaw[]
 
 const routerOptions = {
-  scrollBehavior,
   mode: 'history'
 }
 
