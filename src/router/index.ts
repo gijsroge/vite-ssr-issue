@@ -1,4 +1,4 @@
-import Homepage from '@/views/Homepage.vue'
+import Homepage from '../views/Homepage.vue'
 import { RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
